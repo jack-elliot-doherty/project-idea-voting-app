@@ -23,6 +23,9 @@ export default async (req, res) => {
 
     res.status(200).json(data)
   } catch (error) {
+    if (error.message === "Cannot read properties of null (reading 'user')")
+      return res.status(400).json({ error: 'You must be logged in to vote' })
+
     res.status(400).json({ error: error.message })
   }
 }

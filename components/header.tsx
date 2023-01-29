@@ -14,8 +14,10 @@ export default function Header() {
       </div>
 
       <div className="mt-6 text-center text-dimmed">
-        <p>Help us by voting our roadmap.</p>
-        <p>Vote up the features you want to see in the next release.</p>
+        <p>Help Jack Doherty by voting our roadmap.</p>
+        <p>
+          Vote up the projects or features you want to see Jack Doherty build.
+        </p>
       </div>
     </header>
   )

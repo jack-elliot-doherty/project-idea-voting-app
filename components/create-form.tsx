@@ -1,4 +1,4 @@
-import { signIn, useSession } from 'next-auth/react'
+import { signIn, useSession, signOut } from 'next-auth/react'
 import GlobalStoreContext from '@/store/index'
 import { useContext, useState } from 'react'
 
@@ -24,15 +24,14 @@ export default function CreateForm() {
       <input
         className="form-input"
         type="text"
-        placeholder="Enter a new feature request?"
+        placeholder="Enter a new project or feature request &crarr;"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      {/*isAuthenticated && (
-        <button className="button" type="button" onClick={() => logout()}>
-          Logout
-        </button>
-      )*/}
+
+      <button className="button" type="button" onClick={() => signOut()}>
+        Logout
+      </button>
     </form>
   ) : (
     <div

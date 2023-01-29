@@ -26,7 +26,7 @@ export default function MyApp({
         >
           <GlobalStoreProvider>
             <Head>
-              <title>Roadmap Voting</title>
+              <title>Project and Feature Voting</title>
             </Head>
 
             <div className="max-w-xl mx-auto px-4">
